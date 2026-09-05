@@ -1,0 +1,107 @@
+[
+ {
+ "id": 0,
+ "name": "Forest",
+ "picture": "forest",
+ "file": "forest",
+ "workout": "basic"
+ },
+ {
+ "id": 1,
+ "name": "Ocean",
+ "picture": "oceanwaves",
+ "file": "oceanwaves",
+ "workout": "basic"
+ },
+ {
+ "id": 2,
+ "name": "Asia",
+ "picture": "traditionalasian",
+ "file": "traditionalasian",
+ "workout": "basic"
+ },
+ {
+ "id": 3,
+ "name": "Waterfall",
+ "picture": "waterfall",
+ "file": "waterfall",
+ "workout": "basic"
+ },
+ {
+ "id": 4,
+ "name": "Tropic",
+ "picture": "tropical",
+ "file": "tropical",
+ "workout": "basic"
+ },
+ {
+ "id": 5,
+ "name": "Water",
+ "picture": "watersounds",
+ "file": "watersounds",
+ "workout": "basic"
+ },
+ {
+ "id": 6,
+ "name": "Birds",
+ "picture": "bird",
+ "file": "bird",
+ "workout": "basic"
+ },
+ {
+ "id": 7,
+ "name": "Fire",
+ "picture": "fire",
+ "file": "fire",
+ "workout": "basic"
+ },
+ {
+ "id": 8,
+ "name": "Flute",
+ "picture": "flute",
+ "file": "flute",
+ "workout": "basic"
+ },
+ {
+ "id": 9,
+ "name": "Harp",
+ "picture": "harp",
+ "file": "harp",
+ "workout": "basic"
+ },
+ {
+ "id": 10,
+ "name": "Storm",
+ "picture": "storm",
+ "file": "storm",
+ "workout": "basic"
+ },
+ {
+ "id": 11,
+ "name": "Tokio",
+ "picture": "tokio",
+ "file": "tokio",
+ "workout": "basic"
+ },
+ {
+ "id": 12,
+ "name": "Violin",
+ "picture": "violin",
+ "file": "violin",
+ "workout": "basic"
+ },
+ {
+ "id": 13,
+ "name": "Cricket",
+ "picture": "cricket",
+ "file": "cricket",
+ "workout": "basic"
+ },
+ {
+ "id": 1,
+ "name": "Bird song",
+ "picture": "birdsongs",
+ "file": "birdsongs",
+ "workout": "basic"
+ }
+]
