@@ -22,8 +22,9 @@ workflows:
 
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
-        script: |
-          xcode-project use-profiles
+      script: |
+        set -x
+        xcode-project use-profiles
 
       - name: Increment build number
         script: |
