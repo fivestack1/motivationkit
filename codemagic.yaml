@@ -1,4 +1,13 @@
-environment:
+workflows:
+  ios-native-quick-start:
+    name: MyMotivation
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    integrations:
+      app_store_connect: CM Key
+
+    environment:
   xcode: 16.4
 
   ios_signing:
@@ -21,3 +30,13 @@ scripts:
       xcode-project build-ipa \
         --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
         --scheme "$XCODE_SCHEME"
+
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false
