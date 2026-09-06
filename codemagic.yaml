@@ -29,7 +29,7 @@ workflows:
           cd $CM_BUILD_DIR
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number $APP_STORE_APPLE_ID)
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
-  - name: Set up code signing
+- name: Set up code signing
     script: |
       xcode-project use-profiles \
         --project "$CM_BUILD_DIR/MyMotivation/MyMotivation.xcodeproj"
