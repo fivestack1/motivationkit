@@ -4,7 +4,7 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: CM Key
+      app_store_connect: My Key
     environment:
       ios_signing:
         distribution_type: app_store
@@ -18,10 +18,10 @@ workflows:
         APP_STORE_APPLE_ID: 6762372863
       xcode: 16.4
       #cocoapods: default
-      scripts:
-      #- name: Install CocoaPods dependencies
-        #script: | 
-          #pod install
+    scripts:
+      - name: Install CocoaPods dependencies
+        script: | 
+          pod install
       - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
       - name: Increment build number
