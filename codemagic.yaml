@@ -18,22 +18,22 @@ workflows:
         APP_STORE_APPLE_ID: 6762372863
       xcode: 16.4
       cocoapods: default
-    scripts:
-      #- name: Install CocoaPods dependencies
-        #script: | 
-          #pod install
-      - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles
-      - name: Increment build number
-        script: | 
-          cd $CM_BUILD_DIR
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number $APP_STORE_APPLE_ID)
-          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
-      - name: Build ipa for distribution
-        script: | 
-          xcode-project build-ipa \
-            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"
+      scripts:
+  - name: Debug paths
+    script: |
+      echo "CM_BUILD_DIR=$CM_BUILD_DIR"
+      echo "PWD=$(pwd)"
+
+      echo "=== Xcode projects ==="
+      find "$CM_BUILD_DIR" -name "*.xcodeproj" -print
+
+      echo "=== Info.plist files ==="
+      find "$CM_BUILD_DIR" -name "Info.plist" -print
+
+      echo "=== project.pbxproj ==="
+      find "$CM_BUILD_DIR" -name "project.pbxproj" -print
+      
+    
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
