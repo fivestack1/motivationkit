@@ -10,16 +10,18 @@ workflows:
         distribution_type: app_store
         bundle_identifier: com.activ.motivation
       vars:
-        BUNDLE_ID: " com.activ.motivation"
-        XCODE_WORKSPACE: "MyMotivation.xcworkspace"
+        XCODE_PROJECT: "MyMotivation.xcodeproj"
         XCODE_SCHEME: "MyMotivation"
+        BUNDLE_ID: " com.activ.motivation"
+        #XCODE_WORKSPACE: "MyMotivation.xcodeproj"
+        #XCODE_SCHEME: "MyMotivation"
         APP_STORE_APPLE_ID: 6762372863
       xcode: 16.4
       cocoapods: default
     scripts:
-      - name: Install CocoaPods dependencies
-        script: | 
-          pod install
+      #- name: Install CocoaPods dependencies
+        #script: | 
+          #pod install
       - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
       - name: Increment build number
@@ -30,7 +32,7 @@ workflows:
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
-            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --workspace "$CM_BUILD_DIR/$XCODE_PROJECT" \
             --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
