@@ -17,7 +17,7 @@ workflows:
         #XCODE_SCHEME: "MyMotivation"
         APP_STORE_APPLE_ID: 6762372863
       xcode: 16.4
-      cocoapods: default
+      #cocoapods: default
       scripts:
       #- name: Install CocoaPods dependencies
         #script: | 
