@@ -19,6 +19,8 @@ workflows:
       xcode: 16.4
       cocoapods: default
       
+    scripts:
+    - name: Debug paths
     script: |
       echo "CM_BUILD_DIR=$CM_BUILD_DIR"
       echo "PWD=$(pwd)"
