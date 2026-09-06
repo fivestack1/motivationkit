@@ -1,50 +1,23 @@
-workflows:
-  ios-native-quick-start:
-    name: MyMotivation
-    max_build_duration: 120
-    instance_type: mac_mini_m2
+environment:
+  xcode: 16.4
 
-    integrations:
-      app_store_connect: CM Key
+  ios_signing:
+    distribution_type: app_store
+    bundle_identifier: com.activ.motivation
 
-    environment:
-      xcode: 16.4
+  vars:
+    XCODE_PROJECT: "MyMotivation.xcodeproj"
+    XCODE_SCHEME: "MyMotivation"
+    BUNDLE_ID: "com.activ.motivation"
+    APP_STORE_APPLE_ID: "6762372863"
 
-      ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.activ.motivation
+scripts:
+  - name: Set up provisioning profiles settings on Xcode project
+    script: |
+      xcode-project use-profiles
 
-      vars:
-        XCODE_PROJECT: "MyMotivation.xcodeproj"
-        XCODE_SCHEME: "MyMotivation"
-        BUNDLE_ID: "com.activ.motivation"
-        APP_STORE_APPLE_ID: "6762372863"
-
-    scripts:
-      - name: Set up provisioning profiles settings on Xcode project
-      script: |
-        set -x
-        xcode-project use-profiles
-
-      - name: Increment build number
-        script: |
-          cd "$CM_BUILD_DIR"
-
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID")
-
-          agvtool new-version -all "$((LATEST_BUILD_NUMBER + 1))"
-
-      - name: Build IPA
-        script: |
-          xcode-project build-ipa \
-            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
-            --scheme "$XCODE_SCHEME"
-
-    artifacts:
-      - build/ios/ipa/*.ipa
-      - /tmp/xcodebuild_logs/*.log
-
-    publishing:
-      app_store_connect:
-        auth: integration
-        submit_to_testflight: false
+  - name: Build IPA
+    script: |
+      xcode-project build-ipa \
+        --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+        --scheme "$XCODE_SCHEME"
