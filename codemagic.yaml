@@ -8,8 +8,6 @@ workflows:
       app_store_connect: CM Key
 
     environment:
-  xcode: 16.4
-
   ios_signing:
     distribution_type: app_store
     bundle_identifier: com.activ.motivation
@@ -19,6 +17,8 @@ workflows:
     XCODE_SCHEME: "MyMotivation"
     BUNDLE_ID: "com.activ.motivation"
     APP_STORE_APPLE_ID: "6762372863"
+
+xcode: 16.4
 
 scripts:
   - name: Set up provisioning profiles settings on Xcode project
