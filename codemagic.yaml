@@ -11,12 +11,8 @@ workflows:
       xcode: 16.4
 
       ios_signing:
-        provisioning_profiles:
-          - profile: CM Activ
-            environment_variable: PROFILE_PATH
-        certificates:
-          - certificate: CM Dis Certificate
-            environment_variable: CERTIFICATE_PATH
+        distribution_type: app_store
+        bundle_identifier: com.activ.motivation
 
       vars:
         XCODE_PROJECT: "MyMotivation.xcodeproj"
