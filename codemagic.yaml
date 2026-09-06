@@ -9,6 +9,16 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.activ.motivation
+        environment:
+        
+      ios_signing:
+        provisioning_profiles:
+          - profile: profile_reference
+            environment_variable: THIS_PROFILE_PATH_ON_DISK
+        certificates:
+          - certificate: certificate_reference
+            environment_variable: THIS_CERTIFICATE_PATH_ON_DISK
+            
       vars:
         XCODE_PROJECT: "MyMotivation.xcodeproj"
         XCODE_SCHEME: "MyMotivation"
