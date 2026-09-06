@@ -146,7 +146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = KLPUJZXK87;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = $(SRCROOT)/MyMotivation/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MotivationKit;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -192,7 +192,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_TEAM = KLPUJZXK87;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = $(SRCROOT)/MyMotivation/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MotivationKit;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
