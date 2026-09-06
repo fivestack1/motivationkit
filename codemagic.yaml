@@ -23,7 +23,8 @@ workflows:
     scripts:
       - name: Set up provisioning profiles settings on Xcode project
         script: |
-          xcode-project use-profiles
+          xcode-project use-profiles \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT"
 
       - name: Increment build number
         script: |
