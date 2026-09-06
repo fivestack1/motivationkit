@@ -11,8 +11,12 @@ workflows:
       xcode: 16.4
 
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.activ.motivation
+        provisioning_profiles:
+          - profile: CM Activ
+            environment_variable: PROFILE_PATH
+        certificates:
+          - certificate: CM Dis Certificate
+            environment_variable: CERTIFICATE_PATH
 
       vars:
         XCODE_PROJECT: "MyMotivation.xcodeproj"
@@ -21,6 +25,17 @@ workflows:
         APP_STORE_APPLE_ID: "6762372863"
 
     scripts:
+      - name: Show signing files
+        script: |
+          echo "Profile:"
+          echo "$PROFILE_PATH"
+
+          echo "Certificate:"
+          echo "$CERTIFICATE_PATH"
+
+          echo "Installed profiles:"
+          ls -la "$HOME/Library/MobileDevice/Provisioning Profiles" || true
+
       - name: Set up provisioning profiles settings on Xcode project
         script: |
           xcode-project use-profiles \
@@ -29,7 +44,9 @@ workflows:
       - name: Increment build number
         script: |
           cd "$CM_BUILD_DIR"
+
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number "$APP_STORE_APPLE_ID")
+
           agvtool new-version -all "$((LATEST_BUILD_NUMBER + 1))"
 
       - name: Build IPA
