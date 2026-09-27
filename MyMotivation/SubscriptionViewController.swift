@@ -28,7 +28,7 @@ class SubscriptionViewController: UIViewController {
     
     private var isDisabled : Bool = false
     var products: [SKProduct] = []
-    var product : SKProduct!
+    //var product : SKProduct!
     var product1 : SKProduct!
     var product2 : SKProduct!
     var product3 : SKProduct!
