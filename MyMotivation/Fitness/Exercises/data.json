@@ -1,0 +1,368 @@
+ [
+  {
+  "id": 1,
+  "name": "Basic",
+  "picture": "exercise1",
+  "exercises": [
+      {
+          "id": 1,
+          "name": "Jumping Jack",
+          "picture": "exercise1",
+          "calories": 3
+      },
+      {
+          "id": 2,
+          "name": "Sit Up",
+          "picture": "exercise2",
+          "calories": 2
+      },
+      {
+          "id": 3,
+          "name": "Tuck Jump",
+          "picture": "exercise3",
+          "calories": 4
+      },
+      {
+          "id": 4,
+          "name": "Cobra Stretch",
+          "picture": "exercise4",
+          "calories": 2
+      },
+      {
+          "id": 5,
+          "name": "Pulse Ups",
+          "picture": "exercise5",
+          "calories": 5
+      },
+      {
+          "id": 6,
+          "name": "Wipers",
+          "picture": "exercise6",
+          "calories": 3
+      },
+      {
+          "id": 7,
+          "name": "Leg Raise",
+          "picture": "exercise7",
+          "calories": 4
+      },
+      {
+          "id": 8,
+          "name": "Wall Sit",
+          "picture": "exercise8",
+          "calories": 2
+      },
+      {
+          "id": 9,
+          "name": "Bird Dog",
+          "picture": "exercise9",
+          "calories": 3
+      }
+  ]
+  },
+  {
+  "id": 2,
+  "name": "Full Body",
+  "picture": "exercise10",
+  "exercises": [
+      {
+          "id": 1,
+          "name": "Tap Up",
+          "picture": "exercise10",
+          "calories": 2
+      },
+      {
+          "id": 2,
+          "name": "Shoulder Stretch",
+          "picture": "exercise11",
+          "calories": 3
+      },
+      {
+          "id": 3,
+          "name": "Knee To Chest Lower Back Stretch",
+          "picture": "exercise12",
+          "calories": 4
+      },
+      {
+          "id": 4,
+          "name": "Side Lunges",
+          "picture": "exercise13",
+          "calories": 3
+      },
+      {
+          "id": 5,
+          "name": "Tuck Jump",
+          "picture": "exercise14",
+          "calories": 3
+      },
+      {
+          "id": 6,
+          "name": "Laterals",
+          "picture": "exercise15",
+          "calories": 2
+      },
+      {
+          "id": 7,
+          "name": "Straight Leg Calf Stretch",
+          "picture": "exercise16",
+          "calories": 3
+      },
+      {
+          "id": 8,
+          "name": "Wide Arm Chest Stretch",
+          "picture": "exercise17",
+          "calories": 4
+      },
+      {
+          "id": 9,
+          "name": "Mummy Kicks",
+          "picture": "exercise18",
+          "calories": 3
+      }
+  ]
+  },
+  {
+  "id": 3,
+  "name": "Advanced",
+  "picture": "exercise19",
+  "exercises": [
+      {
+          "id": 1,
+          "name": "Tuck Down",
+          "picture": "exercise19",
+          "calories": 3
+      },
+      {
+          "id": 2,
+          "name": "Press Ups",
+          "picture": "exercise20",
+          "calories": 4
+      },
+      {
+          "id": 3,
+          "name": "Tuck Jump",
+          "picture": "exercise21",
+          "calories": 4
+      },
+      {
+          "id": 4,
+          "name": "High Knees",
+          "picture": "exercise22",
+          "calories": 2
+      },
+      {
+          "id": 5,
+          "name": "L-Sit",
+          "picture": "exercise23",
+          "calories": 3
+      },
+      {
+          "id": 6,
+          "name": "V-Up",
+          "picture": "exercise24",
+          "calories": 2
+      },
+      {
+          "id": 7,
+          "name": "Tuck Sit",
+          "picture": "exercise25",
+          "calories": 3
+      },
+      {
+          "id": 8,
+          "name": "Superman",
+          "picture": "exercise26",
+          "calories": 4
+      },
+      {
+          "id": 9,
+          "name": "Tuck Jump",
+          "picture": "exercise27",
+          "calories": 4
+      }
+  ]
+  },
+  {
+      "id": 4,
+      "name": "Power",
+      "picture": "exercise28",
+      "exercises": [
+          {
+              "id": 1,
+              "name": "Bodyweight Squat",
+              "picture": "exercise28",
+              "calories": 4
+          },
+          {
+              "id": 2,
+              "name": "Flutter Kick",
+              "picture": "exercise29",
+              "calories": 3
+          },
+          {
+              "id": 3,
+              "name": "Cat & Cow Stretch",
+              "picture": "exercise30",
+              "calories": 2
+          },
+          {
+              "id": 4,
+              "name": "Reverse Plank",
+              "picture": "exercise31",
+              "calories": 3
+          },
+          {
+              "id": 5,
+              "name": "Standing Side Crunch",
+              "picture": "exercise32",
+              "calories": 3
+          },
+          {
+              "id": 6,
+              "name": "Scissor Jumps",
+              "picture": "exercise33",
+              "calories": 5
+          },
+          {
+              "id": 7,
+              "name": "Side Skater",
+              "picture": "exercise34",
+              "calories": 3
+          },
+          {
+              "id": 8,
+              "name": "Standing Quadricep Stretch",
+              "picture": "exercise35",
+              "calories": 4
+          },
+          {
+              "id": 9,
+              "name": "Tricep Dips",
+              "picture": "exercise36",
+              "calories": 5
+          }
+      ]
+  },
+  {
+      "id": 5,
+      "name": "Floor",
+      "picture": "exercise37",
+      "exercises": [
+          {
+              "id": 1,
+              "name": "Russian Fit",
+              "picture": "exercise37",
+              "calories": 3
+          },
+          {
+              "id": 2,
+              "name": "Side Plank Leg Fit",
+              "picture": "exercise38",
+              "calories": 4
+          },
+          {
+              "id": 3,
+              "name": "Spiderman Plank",
+              "picture": "exercise39",
+              "calories": 3
+          },
+          {
+              "id": 4,
+              "name": "Mountain Climber",
+              "picture": "exercise40",
+              "calories": 5
+          },
+          {
+              "id": 5,
+              "name": "Reverse Crunch",
+              "picture": "exercise41",
+              "calories": 3
+          },
+          {
+              "id": 6,
+              "name": "T-Stabilization",
+              "picture": "exercise42",
+              "calories": 2
+          },
+          {
+              "id": 7,
+              "name": "Bicycle Crunch",
+              "picture": "exercise43",
+              "calories": 5
+          },
+          {
+              "id": 8,
+              "name": "Plank Jack",
+              "picture": "exercise44",
+              "calories": 4
+          },
+          {
+              "id": 9,
+              "name": "Side Plank",
+              "picture": "exercise45",
+              "calories": 3
+          }
+      ]
+  },
+  {
+      "id": 6,
+      "name": "Fast",
+      "picture": "exercise46",
+      "exercises": [
+          {
+              "id": 1,
+              "name": "Jab Squats",
+              "picture": "exercise46",
+              "calories": 4
+          },
+          {
+              "id": 2,
+              "name": "Heisman",
+              "picture": "exercise47",
+              "calories": 3
+          },
+          {
+              "id": 3,
+              "name": "Sprints",
+              "picture": "exercise48",
+              "calories": 5
+          },
+          {
+              "id": 4,
+              "name": "Standing Mountain Climbers",
+              "picture": "exercise49",
+              "calories": 3
+          },
+          {
+              "id": 5,
+              "name": "Butt Kicks",
+              "picture": "exercise50",
+              "calories": 6
+          },
+          {
+              "id": 6,
+              "name": "Bodyweight Squat",
+              "picture": "exercise51",
+              "calories": 3
+          },
+          {
+              "id": 7,
+              "name": "Standing Straight Let Bicycle",
+              "picture": "exercise52",
+              "calories": 4
+          },
+          {
+              "id": 8,
+              "name": "Cross Climber",
+              "picture": "exercise53",
+              "calories": 2
+          },
+          {
+              "id": 9,
+              "name": "Squat Lunges",
+              "picture": "exercise54",
+              "calories": 5
+          }
+      ]
+  }
+  ]
